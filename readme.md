@@ -254,7 +254,7 @@ rank|state|fraud probability|%est.Caught
 
 In the following plots, we see nationwide heatmaps of some interesting statistics. In the first, we have a distribution of the probability of a person comitting fraud from each state. If a state is white, it was not present in the data set. These are plotly plots, so click each graph for better interactivity!
 
-<a href='https://plot.ly/~JKGProfessional/2.embed'>![heatmap_prob_fraud](images/Probability_by_state.png)</a>
+<a href='https://plot.ly/~JKGProfessional/2.embed'>![heatmap_prob_fraud](images/probability_by_state.png)</a>
 
 In this next plot, we see an estimation on the percentage at which fraud crimes lead to an arrest.
 
