@@ -1,0 +1,28 @@
+.axis {
+  fill: none;
+  font-family: $font-monospace;
+  font-size: 12px;
+
+  line,
+  path {
+    stroke: $blue-light;
+    stroke-width: 1px;
+  }
+}
+
+.axis--y text { text-anchor: start; }
+
+.no-year-data {
+  circle { stroke: $blue-light; }
+  text { fill: $blue-light; }
+}
+
+.usa-map path {
+  stroke: $white;
+  stroke-width: 2px;
+  @media #{$breakpoint-sm} { stroke-width: 1px; }
+}
+
+@media #{$breakpoint-max-sm} {
+  .bar-chart .axis--x .tick:nth-child(even) { display: none; }
+}

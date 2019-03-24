@@ -1,0 +1,21 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th {
+  font-weight: $table-header-font-weight;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+th,
+td {
+  line-height: inherit;
+  padding: 0;
+}
+
+td {
+  vertical-align: top;
+}

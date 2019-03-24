@@ -1,0 +1,16 @@
+.btn:focus {
+  box-shadow: 0 0 0 2px rgba($field-focus-color, .5);
+  outline: none;
+}
+
+.btn-sm {
+  line-height: 1;
+  padding: .25rem .5rem;
+}
+
+.btn-primary:disabled,
+.btn-primary.is-disabled {
+  background-color: #cbd0d4;
+  color: #697a85;
+  opacity: inherit;
+}

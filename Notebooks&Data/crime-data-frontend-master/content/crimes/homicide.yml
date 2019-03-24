@@ -1,0 +1,23 @@
+caveats:
+  - heading: How these crimes are counted
+    text: As a general rule, any death caused by injuries received in a fight, argument, assault, or commission of a crime is classified as murder or nonnegligent manslaughter. The FBI counts one homicide offense for each victim of murder or nonnegligent manslaughter. Accidental deaths, traffic fatalities, suicides, negligent manslaughters, justifiable homicides, and attempted murders are not included.
+
+  - heading: Avoid rankings or comparisons
+    text: Since crime is a sociological phenomenon influenced by a variety of factors, the FBI [discourages ranking locations or making comparisons](https://ucr.fbi.gov/ucr-statistics-their-proper-use) as a way of measuring law enforcement effectiveness. Some of this data may not be comparable to previous years because of differing levels of participation over time.
+
+  - heading: Victim’s relationship to offender
+    text: Until 2016, the FBI recorded all same-sex couples as acquaintances under the “Homosexual Relationship” label. This category is no longer in use. After same-sex marriage was [upheld as a constitutional right in 2015](https://www.supremecourt.gov/opinions/14pdf/14-556_3204.pdf), the FBI started collecting data about crimes against same-sex partners as “Spouse” (if married) or “Boyfriend or Girlfriend” (if not married).
+
+  - heading: Data considerations
+    text: |
+      The data found on the Crime Data Explorer represents reported crime, and is not an exhaustive report of all crime that occurs. It’s important to consider the various factors that lead to crime activity and crime reporting in a community before interpreting the data. Without these considerations the available data can be deceiving. Factors to consider include population size and density, economic conditions, employment rates, prosecutorial, judicial, and correctional policies, administrative and investigative emphases of law enforcement, citizens’ attitudes toward crime and policing, and the effective strength of the police force.
+
+links:
+  - url: https://ucr.fbi.gov/ucr-publications
+    text: "FBI: Uniform Crime Reporting Publications"
+  - url: https://www.bjs.gov/index.cfm?ty=tp&tid=311
+    text: "Bureau of Justice Statistics: Homicide"
+  - url: https://www.bjs.gov/content/pub/pdf/ntmh.pdf
+    text: "The Nation’s Two Measures of Homicide"
+  - url: https://www.bjs.gov/index.cfm?ty=pbse&sid=31
+    text: Homicide Trends in the United States

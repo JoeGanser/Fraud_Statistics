@@ -1,0 +1,21 @@
+caveats:
+  - heading: How these crimes are counted
+    text: "Burglary is the unlawful entry into a building or structure to commit a felony or theft. The FBI has three subclassifications for burglary: forcible entry, unlawful entry where no force is used, and attempted forcible entry. Structures include apartments, barns, trailers or houseboats when used as a permanent dwelling, office buildings, railroad cars (but not automobiles), stables, ships, and vessels."
+
+  - heading: Hotel rule
+    text: "When a number of hotel rooms, motel rooms, or self-storage units are burglarized, the building manager is more likely to report the offenses to the police than individual tenants. In these cases, the law enforcement agency should report a single burglary incident to the FBI and include the number of premises that were entered."
+
+  - heading: Avoid rankings or comparisons
+    text: Since crime is a sociological phenomenon influenced by a variety of factors, the FBI [discourages ranking locations or making comparisons](https://ucr.fbi.gov/ucr-statistics-their-proper-use) as a way of measuring law enforcement effectiveness. Some of this data may not be comparable to previous years because of differing levels of participation over time.
+
+  - heading: Data considerations
+    text: |
+      The data found on the Crime Data Explorer represents reported crime, and is not an exhaustive report of all crime that occurs. It’s important to consider the various factors that lead to crime activity and crime reporting in a community before interpreting the data. Without these considerations the available data can be deceiving. Factors to consider include population size and density, economic conditions, employment rates, prosecutorial, judicial, and correctional policies, administrative and investigative emphases of law enforcement, citizens’ attitudes toward crime and policing, and the effective strength of the police force.
+
+links:
+  - url: https://ucr.fbi.gov/ucr-publications
+    text: "FBI: Uniform Crime Reporting Publications"
+  - url: https://www.bjs.gov/index.cfm?ty=tp&tid=321
+    text: "Bureau of Justice Statistics: Burglary"
+  - url: https://www.bjs.gov/content/pub/pdf/hb9411.pdf
+    text: "Special Report: Household Burglary, 1994–2011"

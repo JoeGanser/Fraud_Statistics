@@ -1,0 +1,60 @@
+/* eslint no-undef: 0 */
+
+import history, { createNewLocation } from '../../src/util/history'
+import { nationalKey } from '../../src/util/usa'
+
+describe('history utility', () => {
+  it('should export a react-router history singleton', () => {
+    expect(typeof history.createHref).toEqual('function')
+    expect(typeof history.push).toEqual('function')
+  })
+
+  describe('createNewLocation()', () => {
+    const mockRouter = {
+      location: { query: {} },
+      params: { crime: 'murder', place: 'oregon', placeType: 'state' },
+    }
+
+    it('should change the place value in pathname if it is a state', () => {
+      const change = { place: 'california', placeType: 'state', pageType: 'homicide' }
+      const router = Object.assign({}, mockRouter)
+      const actual = createNewLocation({ change, router })
+      expect(actual.pathname).toEqual('/explorer/state/california/homicide')
+    })
+
+    it('should remove /state/:place from the pathname if it is national', () => {
+      const change = { place: nationalKey, pageType: 'homicide' }
+      const router = Object.assign({}, mockRouter)
+      const actual = createNewLocation({ change, router })
+      expect(actual.pathname).toEqual('/explorer/homicide')
+    })
+
+    it('should change the crime value in pathname if it is a state', () => {
+      const change = { pageType: 'robbery', place: 'oregon', placeType: 'state' }
+      const router = Object.assign({}, mockRouter)
+      const actual = createNewLocation({ change, router })
+      expect(actual.pathname).toEqual('/explorer/state/oregon/robbery')
+    })
+
+    it('should put other changes in the query object', () => {
+      const change = { until: 2017 }
+      const router = Object.assign({}, mockRouter)
+      const actual = createNewLocation({ change, router })
+      expect(actual.query.until).toEqual(2017)
+    })
+
+    it('should persist state if time filter changed', () => {
+      const change = { pageType: 'robbery', place: 'oregon', placeType: 'state', since: 2000 }
+      const router = Object.assign({}, mockRouter)
+      const actual = createNewLocation({ change, router })
+      expect(actual.pathname).toEqual('/explorer/state/oregon/robbery')
+    })
+
+    it('should ignore place and crime for the query', () => {
+      const change = { pageType: 'robbery' }
+      const router = Object.assign({}, mockRouter)
+      const actual = createNewLocation({ change, router })
+      expect(actual.query).toEqual({})
+    })
+  })
+})

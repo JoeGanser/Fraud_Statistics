@@ -1,0 +1,12 @@
+.progress-bar {
+  height: .5rem;
+  width: 100%;
+
+  span {
+    background-color: $orange;
+    display: block;
+    height: 100%;
+
+    &.rtl { float: right; }
+  }
+}

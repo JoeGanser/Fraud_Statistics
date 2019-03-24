@@ -1,0 +1,13 @@
+.mh6 {
+  min-height: $space-6;
+}
+
+@media #{$breakpoint-lg} {
+  .lg-mh-88p {
+    min-height: 88px;
+  }
+}
+
+.maxh5 {
+  max-height: $space-5;
+}

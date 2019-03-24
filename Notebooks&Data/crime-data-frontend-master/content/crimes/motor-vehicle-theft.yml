@@ -1,0 +1,23 @@
+caveats:
+  - heading: Qualifying vehicles
+    text: Motor vehicle theft is the theft or attempted theft of a car, sport utility vehicle, truck, bus, motorcycle, motor scooter, all-terrain vehicle, or snowmobile. Motor vehicle theft does not include trains, airplanes, farm equipment, bulldozers, construction equipment, or water craft such as motorboats, sailboats, houseboats, or jet skis.
+
+  - heading: How these crimes are counted
+    text: Agencies should classify incidents as motor vehicle theft when someone without lawful access takes an automobile, even if they abandon it later (this is known as joyriding). Agencies should not include temporary use of a vehicle when  the offender previously had permission, such as in family situations. As an example, if a chauffeur steals a car entrusted to their care, the responding agency should report embezzlement.
+
+  - heading: Avoid rankings or comparisons
+    text: Since crime is a sociological phenomenon influenced by a variety of factors, the FBI [discourages ranking locations or making comparisons](https://ucr.fbi.gov/ucr-statistics-their-proper-use) as a way of measuring law enforcement effectiveness. Some of this data may not be comparable to previous years because of differing levels of participation over time.
+
+  - heading: Data considerations
+    text: |
+      The data found on the Crime Data Explorer represents reported crime, and is not an exhaustive report of all crime that occurs. It’s important to consider the various factors that lead to crime activity and crime reporting in a community before interpreting the data. Without these considerations the available data can be deceiving. Factors to consider include population size and density, economic conditions, employment rates, prosecutorial, judicial, and correctional policies, administrative and investigative emphases of law enforcement, citizens’ attitudes toward crime and policing, and the effective strength of the police force.
+
+links:
+  - url: https://ucr.fbi.gov/ucr-publications
+    text: "FBI: Uniform Crime Reporting Publications"
+  - url: https://www.bjs.gov/index.cfm?ty=tp&tid=323
+    text: "Bureau of Justice Statistics: Motor Vehicle Theft"
+  - url: https://www.bjs.gov/index.cfm?ty=pbdetail&iid=476
+    text: "Bureau of Justice Statistics: Carjacking, 1993–2002"
+  - url: https://www.safercar.gov/Vehicle-Owners/Resources/Theft-Prevention
+    text: "Vehicle Theft Prevention: What Consumers Should Know"

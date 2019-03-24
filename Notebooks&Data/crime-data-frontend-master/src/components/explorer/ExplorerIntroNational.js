@@ -1,0 +1,67 @@
+import lowerCase from 'lodash.lowercase'
+import upperFirst from 'lodash.upperfirst'
+import PropTypes from 'prop-types'
+import React from 'react'
+
+import Term from '../Term'
+import { EstimatedTerm, NibrsTerm, SrsTerm } from '../Terms'
+import { formatNum } from '../../util/formats'
+import mapCrimeToGlossaryTerm from '../../util/glossary'
+
+const highlight = txt => <strong>{txt}</strong>
+
+const ExplorerIntroNational = ({ pageType, page, participation, until }) => {
+  const isArson = pageType === 'arson'
+  const isCrime = page === 'crime'
+  const untilUcr = participation.find(p => p.data_year === until)
+
+  if (isCrime) {
+    const crimeTerm = (
+      <Term id={mapCrimeToGlossaryTerm(pageType)}>
+        {upperFirst(lowerCase(pageType))}
+      </Term>
+    )
+    return (
+      <div>
+        {!isArson && isCrime ? (
+          <div>
+            <p className="serif">
+              {crimeTerm} rates for the nation are derived from both <SrsTerm />{' '}
+              and <NibrsTerm /> reports voluntarily submitted to the FBI.
+            </p>
+            <p className="serif">
+              In {highlight(until)}
+              , the FBI <EstimatedTerm /> crime statistics for the nation based
+              on data received from{' '}
+              {highlight(formatNum(untilUcr.published_agency_count))} law
+              enforcement agencies out of{' '}
+              {highlight(formatNum(untilUcr.active_agency_count))} in the
+              country that year.
+            </p>
+          </div>
+        ) : (
+          <div>
+            <p className="serif">
+              The number of arson incidents in the United States is derived from
+              both <SrsTerm /> and <NibrsTerm /> reports sent to the FBI.
+            </p>
+            <p className="serif">
+              In {highlight(until)}, the FBI received voluntary reports of arson
+              from {highlight(formatNum(untilUcr.published_agency_count))} law
+              enforcement agencies. The charts below feature unestimated data.
+            </p>
+          </div>
+        )}
+      </div>
+    )
+  }
+  return <div />
+}
+
+ExplorerIntroNational.propTypes = {
+  pageType: PropTypes.string,
+  participation: PropTypes.array,
+  until: PropTypes.number
+}
+
+export default ExplorerIntroNational

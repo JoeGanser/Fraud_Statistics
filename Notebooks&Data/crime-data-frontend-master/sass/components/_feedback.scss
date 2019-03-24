@@ -1,0 +1,20 @@
+$feedback-height: 600px;
+
+.feedback {
+  bottom: $feedback-height * -1.5;
+  max-height: 100%;
+  overflow: scroll;
+  right: 0;
+
+  transition-duration: 1s;
+  transition-property: bottom;
+  transition-timing-function: cubic-bezier(0, 1, .5, 1);
+
+  @media #{$breakpoint-md} { right: 5%; }
+  &.show { bottom: 0; }
+
+  .btn:focus {
+    box-shadow: 0 0 0 2px rgba($field-focus-color, 1);
+    outline: none;
+  }
+}

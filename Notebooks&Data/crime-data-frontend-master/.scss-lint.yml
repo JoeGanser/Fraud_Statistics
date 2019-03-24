@@ -1,0 +1,11 @@
+exclude:
+  - 'node_modules/**'
+  - 'build/**'
+  - 'public/swagger/**'
+linters:
+  ColorVariable:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  SelectorFormat:
+    enabled: false

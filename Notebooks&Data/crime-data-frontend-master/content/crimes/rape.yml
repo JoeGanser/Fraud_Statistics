@@ -1,0 +1,31 @@
+caveats:
+  - heading: Change in rape definition
+    text: |
+      In 2013, the FBI started collecting rape data under a revised definition and removed “forcible” from the offense name. All reported rape incidents—whether collected under the revised definition or the legacy definition—are presented here. Since the rape definition changed, some state and local law enforcement agencies have continued to report incidents with the legacy definition, because they haven’t been able to change their records management systems to accommodate the change.
+
+  - heading: How these crimes are counted
+    text: Agencies should classify the crime as rape, regardless of the age of the victim, if the victim did not consent or if the victim was incapable of giving consent. If the victim consented, the offender did not force of threaten the victim, and the victim was under the statutory age of consent, agencies should classify the crime as statutory rape. Sexual intercourse with a family member without consent is counted as rape, not incest.
+
+  - heading: Avoid rankings or comparisons
+    text: Since crime is a sociological phenomenon influenced by a variety of factors, the FBI [discourages ranking locations or making comparisons](https://ucr.fbi.gov/ucr-statistics-their-proper-use) as a way of measuring law enforcement effectiveness. Some of this data may not be comparable to previous years because of differing levels of participation over time.
+
+  - heading: Victim’s relationship to offender
+    text: Until 2016, the FBI recorded all same-sex couples as acquaintances under the “Homosexual Relationship” label. This category is no longer in use. After same-sex marriage was [upheld as a constitutional right in 2015](https://www.supremecourt.gov/opinions/14pdf/14-556_3204.pdf), the FBI started collecting data about crimes against same-sex partners as “Spouse” (if married) or “Boyfriend or Girlfriend” (if not married).
+
+  - heading: Data considerations
+    text: |
+      The data found on the Crime Data Explorer represents reported crime, and is not an exhaustive report of all crime that occurs. It’s important to consider the various factors that lead to crime activity and crime reporting in a community before interpreting the data. Without these considerations the available data can be deceiving. Factors to consider include population size and density, economic conditions, employment rates, prosecutorial, judicial, and correctional policies, administrative and investigative emphases of law enforcement, citizens’ attitudes toward crime and policing, and the effective strength of the police force.
+
+links:
+  - url: https://ucr.fbi.gov/ucr-publications
+    text: "FBI: Uniform Crime Reporting Publications"
+  - url: https://ucr.fbi.gov/new-rape-fact-sheet
+    text: Rape Definition Fact Sheet
+  - url: https://ucr.fbi.gov/nibrs/2013/resources/nibrs-rape-vs.-srs-rape
+    text: "NIBRS Rape vs. Summary Rape"
+  - url: https://ucr.fbi.gov/recent-program-updates/new-rape-definition-frequently-asked-questions
+    text: FAQ About the Change in the UCR Definition of Rape
+  - url: https://www.bjs.gov/index.cfm?ty=tp&tid=317
+    text: "Bureau of Justice Statistics: Rape and Sexual Assault"
+  - url: https://www.nij.gov/topics/crime/rape-sexual-violence/Pages/welcome.aspx
+    text: "National Institute of Justice: Rape and Sexual Violence"

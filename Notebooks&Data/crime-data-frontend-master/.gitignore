@@ -1,0 +1,9 @@
+build
+coverage
+node_modules
+public/swagger/vendor
+
+.DS_Store
+.env
+newrelic_agent.log
+npm-debug.log

@@ -1,0 +1,11 @@
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: $space-1;
+
+  &::after {
+    content: '/';
+    margin-left: $space-1;
+  }
+
+  &:last-child::after { content: ''; }
+}

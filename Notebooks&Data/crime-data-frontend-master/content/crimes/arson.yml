@@ -1,0 +1,23 @@
+caveats:
+  - heading: How these crimes are counted
+    text: Arson is the willful or malicious burning or attempting to burn, with or without intent to defraud, a dwelling house, public building, motor vehicle, aircraft, or personal property of another. Only the fires that investigation determined to have been willfully set are included here. Fires labeled as suspicious or of unknown origin are excluded from the data.
+
+  - heading: Arson-related deaths and injuries
+    text: The Uniform Crime Reporting Program does not include arson-related deaths and injuries of police officers and firefighters, unless they were determined to be willful murders or assaults, due to the hazardous nature of these professions.
+
+  - heading: Avoid rankings or comparisons
+    text: Since crime is a sociological phenomenon influenced by a variety of factors, the FBI [discourages ranking locations or making comparisons](https://ucr.fbi.gov/ucr-statistics-their-proper-use) as a way of measuring law enforcement effectiveness. Some of this data may not be comparable to previous years because of differing levels of participation over time.
+
+  - heading: Data considerations
+    text: |
+      The data found on the Crime Data Explorer represents reported crime, and is not an exhaustive report of all crime that occurs. It’s important to consider the various factors that lead to crime activity and crime reporting in a community before interpreting the data. Without these considerations the available data can be deceiving. Factors to consider include population size and density, economic conditions, employment rates, prosecutorial, judicial, and correctional policies, administrative and investigative emphases of law enforcement, citizens’ attitudes toward crime and policing, and the effective strength of the police force.
+
+links:
+  - url: https://ucr.fbi.gov/ucr-publications
+    text: "FBI: Uniform Crime Reporting Publications"
+  - url: https://www.ncjrs.gov/pdffiles1/Digitization/156232NCJRS.pdf
+    text: "FBI: Arson Homicides: Findings from a National Study"
+  - url: https://www.nij.gov/topics/law-enforcement/investigations/fire-arson/pages/welcome.aspx
+    text: "National Institute of Justice: Fire and Arson Investigation"
+  - url: https://www.usfa.fema.gov/downloads/pdf/publications/tr-141.pdf
+    text: "Homeland Security: Special Report: Firefighter Arson"

@@ -1,0 +1,16 @@
+.clear-left { clear: left; }
+.sticky { position: sticky; }
+.left-n100 { left: -100%; }
+.left-0-focus:focus { left: 0; }
+
+@media #{$breakpoint-sm} {
+  .sm-absolute { position: absolute; }
+}
+
+@media #{$breakpoint-md} {
+  .md-absolute { position: absolute; }
+}
+
+@media #{$breakpoint-lg} {
+  .lg-absolute { position: absolute; }
+}

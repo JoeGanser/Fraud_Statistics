@@ -1,0 +1,125 @@
+$blue: #284152 !default;
+$blue-dark: #111323 !default;
+$blue-gray: #8aa2b3 !default;
+$blue-medium: #31515f !default;
+$blue-light: #95aabc !default;
+$blue-lighter: #dfe6ed !default;
+$blue-lightest: #eff6fc !default;
+
+$blue-light-1: #c0def7 !default;
+$blue-light-2: #81b1db !default;
+$blue-light-3: #4a8ac1 !default;
+$blue-light-4: #304558 !default;
+
+$blue-light-508: #a8b9c9 !default;
+$blue-white: #f1f4f9 !default;
+
+$red: #b84941 !default;
+$red-dark: #702c27 !default;
+$red-bright: #ff5e50 !default;
+$red-light: #f48e88 !default;
+$red-lighter: #f4dfdd !default;
+
+$green: #2ecc40 !default;
+$yellow: #ffdc00 !default;
+$orange: #ff5e50 !default;
+$white: #fff !default;
+$black: #111c23 !default;
+
+$font-serif: georgia, times, serif !default;
+$font-sans-serif: arial, -apple-system, BlinkMacSystemFont, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui, sans-serif !default;
+$font-monospace: Courier, Consolas, monospace !default;
+
+$h1: 2.5rem !default;
+$h2: 2rem !default;
+$h3: 1.625rem !default;
+$h4: 1.125rem !default;
+$h5: .875rem !default;
+$h6: .75rem !default;
+
+$space-tiny: .25rem !default;
+$space-1: .5rem !default;
+$space-2: 1rem !default;
+$space-3: 1.5rem !default;
+$space-4: 2rem !default;
+$space-5: 2.5rem !default;
+$space-6: 3rem !default;
+$space-7: 4rem !default;
+$space-8: 5rem !default;
+
+$line-height-1: 1 !default;
+$line-height-2: 1.125 !default;
+$line-height-3: 1.3 !default;
+$line-height-4: 1.5 !default;
+
+$font-family: $font-sans-serif !default;
+$line-height: 1.5 !default;
+$base-font-size: 16px !default;
+$body-font-size: 100% !default;
+$caps-letter-spacing: .025em !default;
+$bold-font-weight: bold !default;
+
+$heading-font-family: $font-serif !default;
+$heading-font-weight: bold !default;
+$heading-line-height: 1.3 !default;
+$heading-margin-top: 1em !default;
+$heading-margin-bottom: .5em !default;
+
+$paragraph-margin-top: 0 !default;
+$paragraph-margin-bottom: $space-2 !default;
+
+$body-color: $blue-medium !default;
+$body-background-color: $blue-white !default;
+$link-color: $blue !default;
+$link-text-decoration: none !default;
+$link-hover-text-decoration: none !default;
+
+$form-field-font-family: inherit !default;
+$form-field-font-size: 1rem !default;
+$form-field-height: 2.5rem !default;
+$form-field-padding-y: .5rem !default;
+$form-field-padding-x: .75rem !default;
+
+$field-focus-color: $blue-medium !default;
+$field-success-color: $green !default;
+$field-warning-color: $yellow !default;
+$field-error-color: $red !default;
+
+$button-font-family: inherit !default;
+$button-font-size: inherit !default;
+$button-font-weight: $bold-font-weight !default;
+$button-line-height: 1.375rem !default;
+$button-padding-y: .5rem !default;
+$button-padding-x: 1.5rem !default;
+$button-color: $white !default;
+$button-background-color: $blue !default;
+
+$table-header-font-weight: $bold-font-weight !default;
+$table-border-color: #ddd !default;
+$table-bg-accent: #f9fafb !default;
+$table-cell-padding-x: .75rem !default;
+$table-cell-padding-y: .5rem !default;
+$table-cell-padding-condensed: .25rem !default;
+
+$border-width: 1px !default;
+$border-radius: 3px !default;
+$border-color: #e9e9e9 !default;
+
+$darken-1: rgba(0, 0, 0, .05) !default;
+$darken-2: rgba(0, 0, 0, .1) !default;
+$darken-3: rgba(0, 0, 0, .25) !default;
+$darken-4: rgba(0, 0, 0, .5) !default;
+
+$lighten-1: rgba(255, 255, 255, .5) !default;
+
+$breakpoint-sm: '(min-width: 40rem)' !default;
+$breakpoint-md: '(min-width: 54rem)' !default;
+$breakpoint-lg: '(min-width: 64rem)' !default;
+$breakpoint-sm-md: '(min-width: 40rem) and (max-width: 54rem)' !default;
+$breakpoint-md-lg: '(min-width: 54rem) and (max-width: 64rem)' !default;
+$breakpoint-max-sm: '(max-width: 40rem)' !default;
+$breakpoint-max-md: '(max-width: 54rem)' !default;
+
+$container-width: 940px !default;
+$container-main-width: 800px !default;
+$container-big-width: 1120px !default;

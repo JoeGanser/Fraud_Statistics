@@ -1,0 +1,21 @@
+engines:
+  duplication:
+    enabled: false
+  eslint:
+    enabled: true
+    channel: 'eslint-3'
+    checks:
+      import/no-unresolved:
+        enabled: false
+  csslint:
+    enabled: true
+  scss-lint:
+    enabled: true
+ratings:
+  paths:
+  - '**.js'
+exclude_paths:
+- build/**/*
+- test/**/*
+- /src/util/nibrsCounts.js
+- /src/pages/Home.js
