@@ -304,12 +304,12 @@ Using the model and the data we can draw a few conclusions;
 
 ### 6. Links to Coded Notebooks
 
-* Cleaning the data
-* Modelling the data
-* Nationwide heatmaps
-* Bar charts
-* Pie chart
-* API usage
+* <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Data_Cleaning.ipynb'>Cleaning the data</a>
+* <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Data_Model.ipynb'>Modelling the data</a>
+* <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Heatmaps.ipynb'>Nationwide heatmaps</a>
+* <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Bar_Chart.ipynb'>Bar charts</a>
+* <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/PieChart.ipynb'>Pie chart</a>
+* <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/API.ipynb'>API usage</a>
 
 ### 7. Sources
 * <a href='https://crime-data-explorer.fr.cloud.gov/api'>(1) FBI api&data source</a>
