@@ -23,7 +23,7 @@ In this research, a model is made that estimates the number of crimes of various
     * <a href='#4D'>4.D Overall crime Distributions</a>
 5. **<a href='#conclusions'>Conclusions</a>**
 5. **<a href='#notebooks'>Links to coded notebooks</a>**
-6. **<a href='#sources'>Sources</a>**
+6. **<a href='#References'>References</a>**
 
 <div id='intro'></div>
 
@@ -33,13 +33,13 @@ The data used for this analysis was based upon crime stats reported to the FBI i
 
 The cleaned, model ready data had the following structure;
 
-states|Town|Population|Intimidation|HomicideOffenses|Murder andNonnegligentManslaughter|NegligentMan-slaughter|JustifiableHomicide|HumanTraffickingOffenses|CommercialSex Acts|InvoluntaryServitude|Kidnapping/Abduction|SexOffenses|Rape|Sodomy|SexualAssaultWith anObject|Fondling|SexOffenses,Non-forcible|Incest|StatutoryRape|Arson|Bribery|Burglary/Breaking &Entering|Counter-feiting/Forgery|Destruction/Damage/Vandalismof Property|Embezzle-ment|Extortion/Blackmail|FraudOffenses|FalsePretenses/Swindle/ConfidenceGame|CreditCard/AutomatedTellerMachineFraud|Imper-sonation|WelfareFraud|WireFraud|Larceny/TheftOffenses|Pocket-picking|Purse-snatching|Shop-lifting|TheftFromBuilding|TheftFromCoin Op-eratedMachineor Device|TheftFromMotorVehicle|Theft of Motor VehicleParts orAcces-sories|AllOtherLarceny|MotorVehicleTheft|Robbery|StolenPropertyOffenses|Drug/NarcoticOffenses|Drug/NarcoticViolations|DrugEquipmentViolations|GamblingOffenses|Betting/Wagering|Operating/Promoting/AssistingGambling|GamblingEquipmentViolations|SportsTampering|Por-nography/ObsceneMaterial|Pros-titutionOffenses|Pros-titution|Assisting orPromotingProstitution|PurchasingProstitution|WeaponLawViolations|total_crimes
----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
-ALABAMA|Hoover|85163.0|52.0|539.0|201.0|3.0|3.0|0.0|0.0|0.0|0.0|0.0|3.0|32.0|17.0|6.0|0.0|9.0|0.0|0.0|0.0|0.0|306.0|63.0|231.0|54.0|0.0|353.0|43.0|199.0|111.0|0.0|0.0|2085.0|3.0|1.0|917.0|348.0|0.0|471.0|101.0|244.0|76.0|51.0|28.0|334.0|148.0|0.0|0.0|0.0|0.0|0.0|7.0|15.0|15.0|0.0|0.0|45.0|7114.0
-ARIZONA|Apache Junction|38519.0|82.0|345.0|64.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|3.0|48.0|2.0|0.0|1.0|45.0|2.0|0.0|2.0|0.0|352.0|29.0|528.0|0.0|0.0|159.0|65.0|32.0|62.0|0.0|0.0|848.0|0.0|0.0|336.0|10.0|0.0|99.0|22.0|381.0|102.0|11.0|10.0|155.0|166.0|0.0|0.0|0.0|0.0|0.0|4.0|10.0|0.0|10.0|0.0|37.0|4022.0
-ARIZONA|Gilbert|247324.0|121.0|846.0|202.0|4.0|2.0|1.0|1.0|0.0|0.0|0.0|48.0|78.0|27.0|1.0|0.0|50.0|20.0|0.0|20.0|0.0|519.0|82.0|1592.0|18.0|6.0|589.0|162.0|149.0|278.0|0.0|0.0|2650.0|1.0|3.0|832.0|96.0|0.0|751.0|64.0|903.0|137.0|32.0|76.0|701.0|845.0|0.0|0.0|0.0|0.0|0.0|13.0|11.0|10.0|1.0|0.0|46.0|11988.0
-ARIZONA|Yuma|93923.0|330.0|668.0|167.0|6.0|5.0|1.0|0.0|0.0|0.0|0.0|33.0|105.0|35.0|10.0|1.0|59.0|11.0|0.0|11.0|1.0|680.0|37.0|1713.0|19.0|3.0|588.0|278.0|122.0|176.0|0.0|12.0|2087.0|5.0|5.0|752.0|101.0|23.0|344.0|115.0|742.0|270.0|75.0|22.0|467.0|573.0|0.0|0.0|0.0|0.0|0.0|13.0|0.0|0.0|0.0|0.0|74.0|10739.0
-ARKANSAS|Alma|5581.0|16.0|129.0|84.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|2.0|6.0|1.0|5.0|0.0|0.0|0.0|0.0|0.0|0.0|35.0|10.0|85.0|0.0|0.0|24.0|0.0|15.0|8.0|0.0|1.0|227.0|1.0|1.0|64.0|17.0|0.0|34.0|2.0|108.0|6.0|2.0|5.0|18.0|6.0|0.0|0.0|0.0|0.0|0.0|1.0|1.0|1.0|0.0|0.0|4.0|919.0
+states|City|Population|total_crimes|Aggravated Assault|Simple Assault|Intimidation|Murder and Nonnegligent Manslaughter|Negligent Man- slaughter|Justifiable Homicide|Human Trafficking Offenses|Commercial Sex Acts|Involuntary Servitude|Kidnapping/ Abduction|Rape|Sodomy|Sexual Assault With an Object|Fondling|Sex Offenses, Non- forcible|Incest|Statutory Rape|Arson|Bribery|Burglary/ Breaking & Entering|Counter- feiting/ Forgery|Destruction/ Damage/ Vandalism of Property|Embezzle- ment|Extortion/ Blackmail|False Pretenses/ Swindle/ Confidence Game|Credit Card/ Automated Teller Machine Fraud|Imper- sonation|Welfare Fraud|Wire Fraud|Pocket- picking|Purse- snatching|Shop- lifting|Theft From Building|Theft From Coin Op- erated Machine or Device|Theft From Motor Vehicle|Theft of  Motor  Vehicle Parts or Acces- sories|All Other Larceny|Motor Vehicle Theft|Robbery|Stolen Property Offenses|Drug/ Narcotic Violations|Drug Equipment Violations|Betting/ Wagering|Operating/ Promoting/ Assisting Gambling|Gambling Equipment Violations|Sports Tampering|Por- nography/ Obscene Material|Pros- titution|Assisting or Promoting Prostitution|Purchasing Prostitution|Weapon Law Violations
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
+ALABAMA|Hoover|85163.0|4627.0|52.0|539.0|201.0|3.0|0.0|0.0|0.0|0.0|0.0|3.0|17.0|6.0|0.0|9.0|0.0|0.0|0.0|1.0|0.0|306.0|63.0|231.0|54.0|0.0|43.0|199.0|111.0|0.0|0.0|3.0|1.0|917.0|348.0|0.0|471.0|101.0|244.0|76.0|51.0|28.0|334.0|148.0|0.0|0.0|0.0|0.0|7.0|15.0|0.0|0.0|45.0
+ARIZONA|Apache Junction|38519.0|2964.0|82.0|345.0|64.0|0.0|0.0|0.0|0.0|0.0|0.0|3.0|2.0|0.0|1.0|45.0|2.0|0.0|2.0|7.0|0.0|352.0|29.0|528.0|0.0|0.0|65.0|32.0|62.0|0.0|0.0|0.0|0.0|336.0|10.0|0.0|99.0|22.0|381.0|102.0|11.0|10.0|155.0|166.0|0.0|0.0|0.0|0.0|4.0|0.0|10.0|0.0|37.0
+ARIZONA|Gilbert|247324.0|8676.0|121.0|846.0|202.0|2.0|1.0|1.0|0.0|0.0|0.0|48.0|27.0|1.0|0.0|50.0|20.0|0.0|20.0|20.0|0.0|519.0|82.0|1592.0|18.0|6.0|162.0|149.0|278.0|0.0|0.0|1.0|3.0|832.0|96.0|0.0|751.0|64.0|903.0|137.0|32.0|76.0|701.0|845.0|0.0|0.0|0.0|0.0|13.0|10.0|1.0|0.0|46.0
+ARIZONA|Yuma|93923.0|7985.0|330.0|668.0|167.0|5.0|1.0|0.0|0.0|0.0|0.0|33.0|35.0|10.0|1.0|59.0|11.0|0.0|11.0|32.0|1.0|680.0|37.0|1713.0|19.0|3.0|278.0|122.0|176.0|0.0|12.0|5.0|5.0|752.0|101.0|23.0|344.0|115.0|742.0|270.0|75.0|22.0|467.0|573.0|0.0|0.0|0.0|0.0|13.0|0.0|0.0|0.0|74.0
+ARKANSAS|Alma|5581.0|661.0|16.0|129.0|84.0|0.0|0.0|0.0|0.0|0.0|0.0|2.0|1.0|5.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|35.0|10.0|85.0|0.0|0.0|0.0|15.0|8.0|0.0|1.0|1.0|1.0|64.0|17.0|0.0|34.0|2.0|108.0|6.0|2.0|5.0|18.0|6.0|0.0|0.0|0.0|0.0|1.0|1.0|0.0|0.0|4.0
 
 Aside from `states`,`town`,`Population`,`total_crimes`, each column represents the number of arrests made for the given crime in that town in the year of 2015.
 
@@ -59,6 +59,8 @@ There are several goals;
 3. Visualize a heatmaps of crime distributions
 4. Estimate and validate the rate at which arrests are made for crimes.
     - And compare it to known rates (e.g. credit card fraud).
+    
+Using the listing of arrests for each crime in each town of a state, we are to estimate the number of frauds that happen in each state. Using that, we calculate the probability of a person comitting fraud by dividing by the population of the state.
 
 <div id='model'></div>
 
@@ -70,38 +72,57 @@ The model used in this analysis is based upon probability theory and making esti
 
 The derivation begins with Baye's theorem;
 
-![one](images/1.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/1.png'>
+</p>
 
 This says the the probability of fraud (or any crime) depends upon the Baye's relation of the probability of fraud given the distribution of other crimes.
 
 Because a fraud by definition is a crime, the probability of an event being a crime being a fraud is one, i.e.
 
-![two](images/2.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/2.png'>
+</p>
 
 So this leads to;
 
-![three](images/3.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/3.png'>
+</p>
 
 And if we give the definitions;
 
-![four](images/4.png)
-![five](images/5.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/4.png'>
+</p>
+
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/5.png'>
+</p>
 
 Therefor;
 
-![six](images/6.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/6.png'>
+</p>
 
 Where N_population is the number of people in the population studied. By what is the actual number of frauds? Is is just the number of arrests? We assume the actual number of frauds in existence exceeds the number of arrests for fraud;
 
-![seven](images/7.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/7.png'>
+</p>
 
 We focus on calculating the actual number of frauds in each town. Using the records of arrests for other crimes in the town, we sum them all up with a weighting system. i.e.
 
-![eight](images/8.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/8.png'>
+</p>
 
 Now the critical portion of the model comes into play - calculating the weights. The weights are calculated using the correlation coefficients of each other crime with the fraud crime we're studying
 
-![nine](images/9.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/9.png'>
+</p>
 
 So we have a threshold for the correlation. This means that we set the weight equal to the correlation between a given crime and fraud if its greater than a threshold value, and set it equal to zero if its not.
 
@@ -109,25 +130,33 @@ Now that an estimation is made for the number of frauds in a given town, we sum 
 
 <div id='math'></div>
 
-![ten](images/10.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/10.png'>
+</p>
 
 Where N_est,t is the estimated number of frauds in town t. This model can also be used estimate over all frequency at which arrests are made for crimes. This is done as follows.
 
 First we sum over all the estimated number of frauds for all the towns in the USA;
 
-![eleven](images/11.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/11.png'>
+</p>
 
 Then we sum over all the arrests for frauds, nationwide.
 
-![twelve](images/12.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/12.png'>
+</p>
 
 And the probability is then;
 
-![thirteen](images/13.png)
+<p align="center">
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/13.png'>
+</p>
 
 Which is the probability of making arrest for a given fraud (or other crime). 
 
-We'd expect the probability of an arrest made for a credit card fraud to be very low and the probability of an arrest for murder (its not a fraud, but thats ok) to be the highest. We shall see the model produces these results.
+We'd expect the probability of an arrest made for a credit card fraud to be very low. We shall see the model produces these results.
 
 <div id='code'></div>
 
@@ -214,7 +243,6 @@ def model(data,fraud_crimes,threshold):
 
 The main objective was to find the states with the lowest rate of fraud instances. To solve this problem, all fraud related crimes in the data were aggregated together to be represented as one crime. These crimes included the following labels in the data;
 
-* `FraudOffenses`
 * `FalsePretenses/Swindle/ConfidenceGame`
 * `CreditCard/AutomatedTellerMachineFraud`
 * `Imper-sonation`
@@ -224,7 +252,7 @@ The main objective was to find the states with the lowest rate of fraud instance
 
 *Throughout this analysis, any time a 'fraud crime' is referred to, it referrs to a person comitting any of these crimes.*
 
-Nationwide, it was found that about 15.78% of these crimes (aggregated) led to an arrest. There were a total of 796,374 fraud related arrests in the USA in 2015, recorded from a population of 60.2million residents.
+Nationwide, it was found that about 7.37% of these crimes (aggregated) led to an arrest. There were a total of 302,783 fraud related arrests in the USA in 2015, recorded from a population of 60.2million residents.
 
 <div id='4A'></div>
 
@@ -232,7 +260,7 @@ Nationwide, it was found that about 15.78% of these crimes (aggregated) led to a
 
 Any useful model should produce results that are realistic. How could can this model be evaluated to determine if it's a good fit? In this case, we use the predicted rate at which arrests are made for varying crimes to see if it's realistic.
 
-It's widely known that credit card fraud goes un-caught quite often. This model predicts that only about 2.3% of domestic credit card fraud crimes lead to an arrest. Other sources predict less than 1%, but regardless this is probability a realistic estimate. (Reference 2)
+It's widely known that credit card fraud goes un-caught quite often. This model predicts that only about 2.7% of domestic credit card fraud crimes lead to an arrest. Other sources predict less than 1%, but regardless this is probability a realistic estimate. (Reference 2)
 
 <div id='4B'></div>
 
@@ -240,13 +268,15 @@ It's widely known that credit card fraud goes un-caught quite often. This model 
 
 In the following table, we see the ranking of the states with the lowest probability of a person comitting a fraudulent act (one of the crimes in the listing above). We also see the estimated percentage for which arrests are made for these crimes.
 
-rank|state|fraud probability|%est.Caught
+rank|states|fraud probability|%est.Caught
 ---|---|---|---
-1|CONNECTICUT|0.0346|25.32
-2|MASSACHUSETTS|0.0458|19.31
-3|PENNSYLVANIA|0.0461|21.65
-4|VERMONT|0.0463|12.88
-5|RHODE ISLAND|0.0568|17.86
+1|CONNECTICUT|0.0186|21.03
+2|VERMONT|0.0286|6.46
+3|MASSACHUSETTS|0.0297|11.43
+4|PENNSYLVANIA|0.0297|15.77
+5|RHODE ISLAND|0.0378|9.82
+
+
 
 <div id='4C'></div>
 
@@ -254,15 +284,20 @@ rank|state|fraud probability|%est.Caught
 
 In the following plots, we see nationwide heatmaps of some interesting statistics. In the first, we have a distribution of the probability of a person comitting fraud from each state. If a state is white, it was not present in the data set. These are plotly plots, so click each graph for better interactivity!
 
-<a href='https://plot.ly/~JKGProfessional/2.embed'>![heatmap_prob_fraud](images/probability_by_state.png)</a>
+<a href='https://plot.ly/~JKGProfessional/2.embed'>
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/probability_by_state.png'>
+</a>
 
 In this next plot, we see an estimation on the percentage at which fraud crimes lead to an arrest.
 
-<a href='https://plot.ly/~JKGProfessional/4.embed?share_key=NSm60isOxosbLahLCexOPo'>![caughtbystate](images/caught_by_state.png)</a>
+<a href='https://plot.ly/~JKGProfessional/4.embed?share_key=NSm60isOxosbLahLCexOPo'>
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/caught_by_state.png'>
+</a>
 
 And in this last heat plot, we have the probability of a person in each state comitting any crime.
 
-<a href='https://plot.ly/~JKGProfessional/6.embed'>![prob_crime_per_person](images/probability_of_crime_per_person.png)</a>
+<a href='https://plot.ly/~JKGProfessional/6.embed'>
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/probability_of_crime_per_person.png'></a>
 
 <div id='4D'></div>
 
@@ -270,13 +305,15 @@ And in this last heat plot, we have the probability of a person in each state co
 
 It's also good to see the overall distribution of crimes that were recorded, as well as the break down of frauds. These can be represented by bar charts and pie charts. Keep in mind these numbers were extracted from a population of 60.1Million people.
 
-In this next chart, we have the counts of each type of crime recorded in the data set. The max count of a crime was 1.29 million arrests, which was for Pocket-picking. Out of the 60.1 million people included in the data, there were 5.7 million arrests.
+In this next chart, we have the counts of each type of crime recorded in the data set. Out of the 60.1 million people included in the data, there were 4.1 million arrests.
 
-<a href='https://plot.ly/~JKGProfessional/13.embed'>![bar](images/bar_chart.png)</a>
+<a href='https://plot.ly/~JKGProfessional/13.embed'><img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/bar_chart.png'></a>
 
-And finally, we have a pie chart break down of the different types of frauds present. There were a total of 796,374 arrests for fraud related crimes (about 14% of all crimes).
+And finally, we have a pie chart break down of the different types of frauds present. There were a total of 302,783arrests for fraud related crimes (about 7.4% of all crimes).
 
-<a href='https://plot.ly/~JKGProfessional/15.embed'>![pie](images/pie_chart.png)</a>
+<a href='https://plot.ly/~JKGProfessional/15.embed'>
+<img src = 'https://raw.githubusercontent.com/JoeGanser/Fraud_Statistics/master/images/pie_chart.png'>
+</a>
 
 <div id='conclusions'></div>
 
@@ -284,25 +321,25 @@ And finally, we have a pie chart break down of the different types of frauds pre
 
 Using the model and the data we can draw a few conclusions;
 
-* The states with the lowest chance of someone comitting a fraud crime are (3-5%)
+* The states with the lowest chance of someone comitting a fraud crime are (1-3%)
+    
     1. CONNECTICUT
-    2. MASSACHUSETTS
-    3. PENNSYLVANIA
-    4. VERMONT
+    2. VERMONT
+    3. MASSACHUSETTS
+    4. PENNSYLVANIA
     5. RHODE ISLAND
-* It was noticed that these states also had higher rates of arrests for fraud crimes (13-25% of cases lead to an arrest)
-* Crime rates were also low in these states to (5-6%)
-* The probability of a person comitting a fraud crime varies from (3% to 17%) across the USA
-* The top five types of frauds that people get arrested for are
-    * Counterfitting (38.9%)
-    * Swindling (30.8%)
-    * Credit card fraud (11%)
-    * Wellfare fraud (10.3%)
-    * Impersonation (8.78%)
-* Fraud crimes consist of about 14% of all crimes.
-* About 2.3% of credit card frauds lead to an arrest.
-
-<div id='notebooks'></div>
+    
+    
+* It was noticed that these states also had higher rates of arrests for fraud crimes (6-21% of cases lead to an arrest)
+* Crime rates were also low in these states to (3-5%)
+* The probability of a person comitting a fraud crime varies from (1% to 17%) across the USA
+* The top four types of frauds that people get arrested for are
+    * Swindling (29%)
+    * Impersonation (27%)
+    * Credit card fraud (23.1%)
+    * Counterfitting (19%)
+* Fraud crimes consist of about 7% of all crimes.
+* About 2.7% of credit card frauds lead to an arrest.
 
 ### 6. Links to Coded Notebooks
 
@@ -312,8 +349,6 @@ Using the model and the data we can draw a few conclusions;
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Bar_Chart.ipynb'>Bar charts</a>
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/PieChart.ipynb'>Pie chart</a>
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/API.ipynb'>API usage</a>
-
-<div id='sources'></div>
 
 ### 7. Sources
 * <a href='https://crime-data-explorer.fr.cloud.gov/api'>(1) FBI api&data source</a>
