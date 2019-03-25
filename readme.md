@@ -22,8 +22,8 @@ In this research, a model is made that estimates the number of crimes of various
     * <a href='#4C'>4.C Nationwide Heatmap reperesentations</a>
     * <a href='#4D'>4.D Overall crime Distributions</a>
 5. **<a href='#conclusions'>Conclusions</a>**
-5. **<a href='#notebooks'>Links to coded notebooks</a>**
-6. **<a href='#References'>References</a>**
+6. **<a href='#notebooks'>Links to coded notebooks</a>**
+7. **<a href='#References'>References</a>**
 
 <div id='intro'></div>
 
@@ -341,6 +341,8 @@ Using the model and the data we can draw a few conclusions;
 * Fraud crimes consist of about 7% of all crimes.
 * About 2.7% of credit card frauds lead to an arrest.
 
+<div id='notebooks'></div>
+
 ### 6. Links to Coded Notebooks
 
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Data_Cleaning.ipynb'>Cleaning the data</a>
@@ -350,6 +352,7 @@ Using the model and the data we can draw a few conclusions;
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/PieChart.ipynb'>Pie chart</a>
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/API.ipynb'>API usage</a>
 
+<div id='sources'></div>
 ### 7. Sources
 * <a href='https://crime-data-explorer.fr.cloud.gov/api'>(1) FBI api&data source</a>
 * <a href='http://scambusters.org/identitythieves.html'>(2) Stats on credit card fraud</a>
