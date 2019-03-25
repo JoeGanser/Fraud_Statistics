@@ -9,7 +9,7 @@ By Joe Ganser
 
 In this research, a model is made that estimates the number of crimes of various types committed in each state, and calculates the probability of a citizen comitting a given type of crime for each state. The focus is on fraud crimes. The model uses arrest statistics for various crimes in each town of each American state, and aggregates them to make conclusions about the larger population. The model is validated by examining how it estimates the frequency in which arrests are made for other crimes. This project was constructed in Python 3.
 
-**CONTEST**
+**Contents**
 
 1. **<a href='#intro'>Introducing the data</a>**
 2. **<a href='#goals'>Problem statement & Goals of this analysis</a>**
@@ -29,7 +29,7 @@ In this research, a model is made that estimates the number of crimes of various
 
 # **1. Introducing the data**
 
-The data used for this analysis was based upon crime stats reported to the FBI in 2015. Before cleaning it had 5874 rows, where each row represented a town. After cleaning, 3664 rows (towns) were left distributed across 37 US states. This covered a population of 60 million citizens, and 54 different types of crimes.
+The data used for this analysis was based upon crime stats reported to the FBI in 2015. Before cleaning it had 5874 rows, where each row represented a town. After cleaning, 3664 rows (towns) were left distributed across 37 US states. This covered a population of 60 million citizens, and 49 different types of crimes.
 
 The cleaned, model ready data had the following structure;
 
@@ -219,7 +219,7 @@ def model(data,fraud_crimes,threshold):
     model_groupby['est.Frauds'] = model_groupby[model_groupby_crimes].sum(axis=1)
     model_groupby['%est.Caught'] = model_groupby['fraud_count'].div(model_groupby['est.Frauds'],axis=0).multiply(100)
     model_groupby = model_groupby[['states','Population','total_crimes','fraud_count','est.Frauds','%est.Caught']]
-    model_groupby['fraud_prob'] = model_groupby['est.Frauds'].div(model_groupby['Population1'],axis=0)
+    model_groupby['fraud_prob'] = model_groupby['est.Frauds'].div(model_groupby['Population'],axis=0)
     model_groupby.sort_values(by='fraud_prob',ascending=True,inplace=True)
     
     model_groupby = model_groupby[['states','fraud_prob','Population','total_crimes','fraud_count','est.Frauds','%est.Caught']]
