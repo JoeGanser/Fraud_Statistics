@@ -23,7 +23,7 @@ In this research, a model is made that estimates the number of crimes of various
     * <a href='#4D'>4.D Overall crime Distributions</a>
 5. **<a href='#conclusions'>Conclusions</a>**
 6. **<a href='#notebooks'>Links to coded notebooks</a>**
-7. **<a href='#References'>References</a>**
+7. **<a href='#sources'>Sources</a>**
 
 <div id='intro'></div>
 
