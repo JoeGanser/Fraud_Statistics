@@ -13,7 +13,7 @@ In this research, a model is made that estimates the number of crimes of various
 
 1. **<a href='#intro'>Introducing the data</a>**
 2. **<a href='#goals'>Problem statement & Goals of this analysis</a>**
-3. **<a href='#model'>Model Construction and theory</a>**
+3. <a href='#model'>**Model Construction and theory**</a>
     * <a href='#math'>3.A Mathematical formula</a>
     * <a href='#code'>3.B Model Code in python</a>
 4. **<a href='#key'>Key Results</a>**
@@ -22,8 +22,8 @@ In this research, a model is made that estimates the number of crimes of various
     * <a href='#4C'>4.C Nationwide Heatmap reperesentations</a>
     * <a href='#4D'>4.D Overall crime Distributions</a>
 5. **<a href='#conclusions'>Conclusions</a>**
-5. **<a href='#notebooks'>Links to coded notebooks</a>**
-6. **<a href='#References'>References</a>**
+6. **<a href='#notebooks'>Links to coded notebooks</a>**
+7. **<a href='#sources'>Sources</a>**
 
 <div id='intro'></div>
 
@@ -215,14 +215,14 @@ def model(data,fraud_crimes,threshold):
         combined_frame = pd.concat([combined_frame,dummy_frame],axis=0)
     
     model_groupby = combined_frame.groupby('states').sum().reset_index()
-    model_groupby_crimes = [i for i in model_groupby.columns if i not in ['states','Population1','total_crimes']]
+    model_groupby_crimes = [i for i in model_groupby.columns if i not in ['states','Population','total_crimes']]
     model_groupby['est.Frauds'] = model_groupby[model_groupby_crimes].sum(axis=1)
     model_groupby['%est.Caught'] = model_groupby['fraud_count'].div(model_groupby['est.Frauds'],axis=0).multiply(100)
-    model_groupby = model_groupby[['states','Population1','total_crimes','fraud_count','est.Frauds','%est.Caught']]
+    model_groupby = model_groupby[['states','Population','total_crimes','fraud_count','est.Frauds','%est.Caught']]
     model_groupby['fraud_prob'] = model_groupby['est.Frauds'].div(model_groupby['Population1'],axis=0)
     model_groupby.sort_values(by='fraud_prob',ascending=True,inplace=True)
     
-    model_groupby = model_groupby[['states','fraud_prob','Population1','total_crimes','fraud_count','est.Frauds','%est.Caught']]
+    model_groupby = model_groupby[['states','fraud_prob','Population','total_crimes','fraud_count','est.Frauds','%est.Caught']]
     model_groupby = model_groupby.reset_index().drop('index',axis=1)
     
     
@@ -341,6 +341,8 @@ Using the model and the data we can draw a few conclusions;
 * Fraud crimes consist of about 7% of all crimes.
 * About 2.7% of credit card frauds lead to an arrest.
 
+<div id='notebooks'></div>
+
 ### 6. Links to Coded Notebooks
 
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Data_Cleaning.ipynb'>Cleaning the data</a>
@@ -349,6 +351,8 @@ Using the model and the data we can draw a few conclusions;
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/Bar_Chart.ipynb'>Bar charts</a>
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/PieChart.ipynb'>Pie chart</a>
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/API.ipynb'>API usage</a>
+
+<div id='sources'></div>
 
 ### 7. Sources
 * <a href='https://crime-data-explorer.fr.cloud.gov/api'>(1) FBI api&data source</a>
