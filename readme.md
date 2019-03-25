@@ -9,7 +9,7 @@ By Joe Ganser
 
 In this research, a model is made that estimates the number of crimes of various types committed in each state, and calculates the probability of a citizen comitting a given type of crime for each state. The focus is on fraud crimes. The model uses arrest statistics for various crimes in each town of each American state, and aggregates them to make conclusions about the larger population. The model is validated by examining how it estimates the frequency in which arrests are made for other crimes. This project was constructed in Python 3.
 
-**Contents**
+**CONTEST**
 
 1. **<a href='#intro'>Introducing the data</a>**
 2. **<a href='#goals'>Problem statement & Goals of this analysis</a>**
