@@ -353,6 +353,7 @@ Using the model and the data we can draw a few conclusions;
 * <a href='https://github.com/JoeGanser/Fraud_Statistics/blob/master/Notebooks%26Data/API.ipynb'>API usage</a>
 
 <div id='sources'></div>
+
 ### 7. Sources
 * <a href='https://crime-data-explorer.fr.cloud.gov/api'>(1) FBI api&data source</a>
 * <a href='http://scambusters.org/identitythieves.html'>(2) Stats on credit card fraud</a>
